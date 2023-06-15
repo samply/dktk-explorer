@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="date-condition-builder.from" datatype="html">
+        <source>from:</source>
+        <target>von:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/criteria-catalogue/components/date-condition-builder/date-condition-builder.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="date-condition-builder.to" datatype="html">
+        <source>to:</source>
+        <target>bis:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/criteria-catalogue/components/date-condition-builder/date-condition-builder.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="number-condition-builder.equals" datatype="html">
+        <source>equals:</source>
+        <target>gleich:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/criteria-catalogue/components/number-condition-builder/number-condition-builder.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="number-condition-builder.from" datatype="html">
+        <source>from:</source>
+        <target>von:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/criteria-catalogue/components/number-condition-builder/number-condition-builder.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="number-condition-builder.to" datatype="html">
+        <source>to:</source>
+        <target>bis:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/criteria-catalogue/components/number-condition-builder/number-condition-builder.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2455725920612353578" datatype="html">
+        <source>Ask <x id="INTERPOLATION" equiv-text="{{selectedNegotiationPartners.length}} sites to negotiate"/> sites to negotiate</source>
+        <target>Daten bei <x id="INTERPOLATION" equiv-text="{{selectedNegotiationPartners.length}} sites to negotiate"/> Standorten anfragen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/negotiate-button/negotiate-button.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <note priority="1" from="description">indication for the user that clicking this button will start negotiation with multiple sites</note>
+      </trans-unit>
+      <trans-unit id="8969037609074820934" datatype="html">
+        <source>Search has been modified!</source>
+        <target>Diagramme repräsentieren nicht mehr die aktuelle Suche!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/negotiate-button/negotiate-button.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">warn the user that search parameters are modified</note>
+      </trans-unit>
+      <trans-unit id="4203652128950847512" datatype="html">
+        <source>Sites</source>
+        <target>Standorte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/result-table/result-table.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">column header for the name of a site</note>
+      </trans-unit>
+      <trans-unit id="2904579647410573959" datatype="html">
+        <source>Patients</source>
+        <target>Patienten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/result-table/result-table.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">column header for the number of patients</note>
+      </trans-unit>
+      <trans-unit id="1159573015632588468" datatype="html">
+        <source>Specimen</source>
+        <target>Bioproben</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/result-table/result-table.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">column header for the number of specimen</note>
+      </trans-unit>
+      <trans-unit id="135450262813974755" datatype="html">
+        <source>[type your search criteria here]</source>
+        <target>[Hier Suchkriterien eingeben]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/search-bar/search-bar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">placeholder for users search request</note>
+      </trans-unit>
+      <trans-unit id="6233358794697333609" datatype="html">
+        <source> Click here to view your detailed query. </source>
+        <target>Hier klicken um die detaillierte Suchanfrage anzuzeigen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/search-bar/search-bar.component.html</context>
+          <context context-type="linenumber">39,37</context>
+        </context-group>
+        <note priority="1" from="description">hint the user that clicking this button will show the detailed query</note>
+      </trans-unit>
+      <trans-unit id="4580988005648117665" datatype="html">
+        <source>Search</source>
+        <target>Suchen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/search-bar/search-bar.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">text for the search button</note>
+      </trans-unit>
+      <trans-unit id="8700121026680200191" datatype="html">
+        <source>Clear</source>
+        <target>Löschen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">projects/lens-core/src/lib/components/search-bar/search-bar.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">text for the clear button</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
