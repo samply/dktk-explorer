@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
     "security:check": "npm audit --production --audit-level high",
-    "build": "ng build",
+    "build": "ng build --configuration development",
     "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",

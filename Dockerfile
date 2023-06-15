@@ -1,3 +1,4 @@
+ARG PRODUCTION=false
 FROM node:lts as build
 WORKDIR /usr/src/app
 RUN sh -c '[ -z "$http_proxy" ] || ( npm config set proxy $http_proxy; npm config set https-proxy $http_proxy )'
@@ -5,7 +6,7 @@ COPY package.json package-lock.json ./
 RUN npm install
 COPY ./angular.json ./tsconfig.json ./tsconfig.app.json ./tsconfig.spec.json ./
 COPY ./src ./src
-RUN npm run build
+RUN sh -c 'if [ "${PRODUCTION}" = true ]; then npm run build:prod; else npm run build; fi'
 
 FROM nginx:stable-alpine
 ENV NGINX_PORT=80 NGINX_DEPLOYMENT_CONTEXT=/
