@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lens-demo": {
+    "dktk-explorer": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lens-demo",
+            "outputPath": "dist/dktk-explorer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lens-demo:build:production"
+              "browserTarget": "dktk-explorer:build:production"
             },
             "development": {
-              "browserTarget": "lens-demo:build:development"
+              "browserTarget": "dktk-explorer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lens-demo:build"
+            "browserTarget": "dktk-explorer:build"
           }
         },
         "test": {
