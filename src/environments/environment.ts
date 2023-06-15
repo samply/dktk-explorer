@@ -10,12 +10,39 @@ import {
   proceduresMeasure,
   specimenMeasure,
 } from '@samply/lens-core';
-import { Blaze } from '@samply/lens-core/cql';
+import { Beam } from '@samply/lens-core/cql';
 
 export const environment = {
   production: false,
   lensConfig: new LensConfig(
-    [new Blaze('blaze', new URL('http://localhost:8080'))],
+    [
+      new Beam(
+        'dev.broker.ccp-it.dktk.dkfz.de',
+        new URL("https://backend.demo.lens.samply.de/test"),
+        [
+          "berlin",
+          "bonn",
+          "dresden",
+          "essen",
+          "frankfurt",
+          "hannover",
+          "mainz",
+          "muenchen-lmu",
+          "ulm",
+          "wuerzburg"
+        ]
+      ),
+      // NOTE: This is a temporary workaround while switching the sites to the production system
+      new Beam(
+        'broker.ccp-it.dktk.dkfz.de',
+        new URL("https://backend.demo.lens.samply.de/prod"),
+        [
+          "mannheim",
+          "freiburg",
+          "muenchen-tum"
+        ]
+      )
+    ],
     [
       patientsMeasure,
       diagnosisMeasure,
