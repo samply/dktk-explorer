@@ -14,9 +14,9 @@ export const environment = {
     [
       new Beam(
         'broker.ccp-it.dktk.dkfz.de',
-        new URL("https://backend.data.dktk.dkfz.de/prod/"),
-        ["mannheim", "freiburg", "muenchen-tum"]
-      )
+        new URL('https://backend.data.dktk.dkfz.de/prod/'),
+        ['mannheim', 'freiburg', 'muenchen-tum']
+      ),
     ],
     [
       patientsMeasure,
