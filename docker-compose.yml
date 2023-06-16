@@ -37,6 +37,8 @@ services:
   lens:
     # NOTE: This will only host the default image. You will need to create your own image at docker hub using the provided Dockerfile.
     image: samply/dktk-explorer${COMPOSE_PROFILES}
+    environment:
+      - NGINX_SERVER_NAME=${GUI_HOST}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.lens.rule=Host(`${GUI_HOST}`)"
@@ -61,7 +63,7 @@ services:
       - "traefik.http.middlewares.corsheaders.headers.accesscontrolalloworiginlist=https://${GUI_HOST}"
       - "traefik.http.middlewares.corsheaders.headers.accesscontrolallowcredentials=true"
       - "traefik.http.middlewares.corsheaders.headers.accesscontrolmaxage=-1"
-      - "traefik.http.routers.spot.rule=Host(`backend.${GUI_HOST}`) && Path(`/prod`)"
+      - "traefik.http.routers.spot.rule=Host(`backend.${GUI_HOST}`) && PathPrefix(`/prod`)"
       - "traefik.http.middlewares.stripprefix_spot_prod.stripprefix.prefixes=/prod"
       - "traefik.http.routers.spot.tls=true"
       - "traefik.http.routers.spot.middlewares=corsheaders,traefik-forward-auth,stripprefix_spot_prod"
@@ -84,34 +86,31 @@ services:
     image: docker.verbis.dkfz.de/ccp-private/central-spot
     environment:
       BEAM_SECRET: "${LOCAL_BEAM_SECRET_TEST}"
-      BEAM_URL: http://beam-proxy:8081
+      BEAM_URL: http://beam-proxy-test:8081
       BEAM_PROXY_ID: ${LOCAL_BEAM_ID}
-      BEAM_BROKER_ID: ${BROKER_HOST}
+      BEAM_BROKER_ID: ${BROKER_HOST_TEST}
       BEAM_APP_ID: ${SITES_APP_ID}
     depends_on:
       - "beam-proxy"
     labels:
       - "traefik.enable=true"
-      - "traefik.http.services.spot.loadbalancer.server.port=8080"
-      - "traefik.http.middlewares.corsheaders.headers.accesscontrolallowmethods=GET,OPTIONS,POST"
-      - "traefik.http.middlewares.corsheaders.headers.accesscontrolalloworiginlist=https://${GUI_HOST}"
-      - "traefik.http.middlewares.corsheaders.headers.accesscontrolallowcredentials=true"
-      - "traefik.http.middlewares.corsheaders.headers.accesscontrolmaxage=-1"
-      - "traefik.http.routers.spot.rule=Host(`backend.${GUI_HOST}`) && Path(`/test`)"
+      - "traefik.http.services.spot-test.loadbalancer.server.port=8080"
+      - "traefik.http.routers.spot-test.rule=Host(`backend.${GUI_HOST}`) && PathPrefix(`/test`)"
       - "traefik.http.middlewares.stripprefix_spot_test.stripprefix.prefixes=/test"
-      - "traefik.http.routers.spot.tls=true"
-      - "traefik.http.routers.spot.middlewares=corsheaders,traefik-forward-auth,stripprefix_spot_test"
+      - "traefik.http.routers.spot-test.tls=true"
+      - "traefik.http.routers.spot-test.middlewares=corsheaders,traefik-forward-auth,stripprefix_spot_test"
     profiles:
       - ":develop"
 
   beam-proxy-test:
     image: docker.verbis.dkfz.de/cache/samply/beam-proxy:develop
     environment:
-      BROKER_URL: https://${BROKER_HOST}
-      PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST}
+      BROKER_URL: https://${BROKER_HOST_TEST}
+      PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST_TEST}
       APP_0_ID: ${SITES_APP_ID}
       APP_0_KEY: ${LOCAL_BEAM_SECRET_TEST}
       PRIVKEY_FILE: /run/secrets/proxy.pem
+      ROOTCERT_FILE: /run/secrets/root-test.crt.pem
       ALL_PROXY: ${http_proxy}
     secrets:
       - proxy.pem
