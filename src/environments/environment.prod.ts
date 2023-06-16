@@ -6,12 +6,18 @@ import {
   proceduresMeasure,
   specimenMeasure,
 } from '@samply/lens-core';
-import { Blaze } from '@samply/lens-core/cql';
+import { Beam } from '@samply/lens-core/cql';
 
 export const environment = {
   production: true,
   lensConfig: new LensConfig(
-    [new Blaze('blaze', new URL('http://localhost:8080'))],
+    [
+      new Beam(
+        'broker.ccp-it.dktk.dkfz.de',
+        new URL('https://backend.data.dktk.dkfz.de/prod/'),
+        ['mannheim', 'freiburg', 'muenchen-tum']
+      ),
+    ],
     [
       patientsMeasure,
       diagnosisMeasure,
