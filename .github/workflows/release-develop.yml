@@ -1,14 +1,16 @@
 name: "Release new Develop Version"
 on:
-  push:
-    branches:
-      - 'develop'
+  workflow_run:
+    workflows: ["Verify new Code"]
+    types:
+      - completed
 
 jobs:
   build-and-publish:
     uses: samply/github-workflows/.github/workflows/docker-ci.yml@main
     with:
       image-name: ${{ github.repository }}
+      build-platforms: 'linux/amd64'
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}

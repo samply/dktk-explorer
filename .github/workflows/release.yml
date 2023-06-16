@@ -9,6 +9,7 @@ jobs:
     uses: samply/github-workflows/.github/workflows/docker-ci.yml@main
     with:
       image-name: ${{ github.repository }}
+      build-platforms: 'linux/amd64'
       build-args: |
         PRODUCTION=true
     secrets:
