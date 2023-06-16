@@ -13,8 +13,8 @@ RUN if [ "${PRODUCTION}" = true ];then \
     fi;
 
 FROM nginx:stable-alpine
-ENV NGINX_PORT=80 NGINX_DEPLOYMENT_CONTEXT=/
-COPY nginx.conf /etc/nginx/nginx.conf
+ENV NGINX_PORT=80 NGINX_SERVER_NAME=localhost
+COPY nginx.conf /etc/nginx/templates/default.conf.template
 # fixed unshown font icons with mime.types file and ngnix.conf > location ~* .(js|css|ttf|ttc|otf|eot|woff|woff2)$ {...
 COPY mime.types /etc/nginx/mime.types
 COPY --from=build /usr/src/app/dist/* /usr/share/nginx/html/
