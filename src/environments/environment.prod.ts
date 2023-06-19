@@ -1,12 +1,12 @@
-import {
-  LensConfig,
-  diagnosisMeasure,
-  medicationStatementsMeasure,
-  patientsMeasure,
-  proceduresMeasure,
-  specimenMeasure,
-} from '@samply/lens-core';
+import { LensConfig } from '@samply/lens-core';
 import { Beam } from '@samply/lens-core/cql';
+import {
+  dktkDiagnosisMeasure,
+  dktkMedicationStatementsMeasure,
+  dktkPatientsMeasure,
+  dktkProceduresMeasure,
+  dktkSpecimenMeasure,
+} from './measures';
 
 export const environment = {
   production: true,
@@ -19,11 +19,11 @@ export const environment = {
       ),
     ],
     [
-      patientsMeasure,
-      diagnosisMeasure,
-      specimenMeasure,
-      proceduresMeasure,
-      medicationStatementsMeasure,
+      dktkPatientsMeasure,
+      dktkDiagnosisMeasure,
+      dktkSpecimenMeasure,
+      dktkProceduresMeasure,
+      dktkMedicationStatementsMeasure,
     ]
   ),
 };
