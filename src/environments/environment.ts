@@ -2,15 +2,15 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-import {
-  diagnosisMeasure,
-  LensConfig,
-  medicationStatementsMeasure,
-  patientsMeasure,
-  proceduresMeasure,
-  specimenMeasure,
-} from '@samply/lens-core';
+import { LensConfig } from '@samply/lens-core';
 import { Beam } from '@samply/lens-core/cql';
+import {
+  dktkDiagnosisMeasure,
+  dktkMedicationStatementsMeasure,
+  dktkPatientsMeasure,
+  dktkProceduresMeasure,
+  dktkSpecimenMeasure,
+} from './measures';
 
 export const environment = {
   production: false,
@@ -40,11 +40,11 @@ export const environment = {
       ),
     ],
     [
-      patientsMeasure,
-      diagnosisMeasure,
-      specimenMeasure,
-      proceduresMeasure,
-      medicationStatementsMeasure,
+      dktkPatientsMeasure,
+      dktkDiagnosisMeasure,
+      dktkSpecimenMeasure,
+      dktkProceduresMeasure,
+      dktkMedicationStatementsMeasure,
     ]
   ),
 };
