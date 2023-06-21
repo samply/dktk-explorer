@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2023-06-21
+### :bug: Bug Fixes
+- [`f71cce2`](https://github.com/samply/dktk-explorer/commit/f71cce298c0f2c5b12cf98f88b7d332fdd692488) - use official dktk favicon *(commit by [@lablans](https://github.com/lablans))*
+
+### :recycle: Refactors
+- [`c5f78c6`](https://github.com/samply/dktk-explorer/commit/c5f78c635d5a7433976f74f5c2d53783e8fbb4ef) - switch to focus *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.1.0] - 2023-06-16
 ### :sparkles: New Features
 - [`166cb15`](https://github.com/samply/dktk-explorer/commit/166cb156e3b85706ef88461af5d7a4e017d3f9ed) - added env for changing the server name in nginx *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -22,3 +30,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 [0.1.0]: https://github.com/samply/dktk-explorer/compare/0.0.0...0.1.0
+[0.2.0]: https://github.com/samply/dktk-explorer/compare/0.1.0...0.2.0
