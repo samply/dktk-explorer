@@ -6,6 +6,7 @@ import { Lokalisation } from './lokalisation';
 import { MolecularMarker } from './molecular-marker';
 
 export const staticCatalogue: Array<Category> = [
+  new Category('tumor_entity', 'Tumorentität', Entities),
   new Category('patient', 'Patient', [
     new Criteria(
       'gender',
@@ -26,7 +27,7 @@ export const staticCatalogue: Array<Category> = [
         },
         {
           key: 'other',
-          de: 'Sonstiges / intersexuell',
+          de: 'divers, sonstiges / intersexuell',
           en: 'diverse',
         },
         {
@@ -61,7 +62,6 @@ export const staticCatalogue: Array<Category> = [
       ]
     ),
   ]),
-  new Category('tumor_entity', 'Tumorentität', Entities),
   new Category('tumor_classification', 'Klassifikation von Tumoren', [
     new Criteria(
       'year_of_diagnosis',
