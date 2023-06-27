@@ -24,6 +24,7 @@ export class MainComponent {
     .set('frankfurt', 'Frankfurt')
     .set('freiburg', 'Freiburg')
     .set('hannover', 'Hannover')
+    .set('hamburg', 'Hamburg')
     .set('mainz', 'Mainz')
     .set('mannheim', 'Mannheim')
     .set('muenchen-lmu', 'München(LMU)')
