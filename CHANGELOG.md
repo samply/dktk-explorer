@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2023-06-30
+### :bug: Bug Fixes
+- [`3f7ef35`](https://github.com/samply/dktk-explorer/commit/3f7ef3578f8cc2f2603eb3b7527c735029503642) - adjust deployment according to beam configuration changes *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+### :wrench: Chores
+- [`2c38f62`](https://github.com/samply/dktk-explorer/commit/2c38f62ffe4a95f359f9103321eba4c5ec40d9e7) - added site hamburg *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.0] - 2023-06-21
 ### :bug: Bug Fixes
 - [`f71cce2`](https://github.com/samply/dktk-explorer/commit/f71cce298c0f2c5b12cf98f88b7d332fdd692488) - use official dktk favicon *(commit by [@lablans](https://github.com/lablans))*
@@ -31,3 +39,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [0.1.0]: https://github.com/samply/dktk-explorer/compare/0.0.0...0.1.0
 [0.2.0]: https://github.com/samply/dktk-explorer/compare/0.1.0...0.2.0
+[0.2.1]: https://github.com/samply/dktk-explorer/compare/0.2.0...0.2.1
