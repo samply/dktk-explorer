@@ -21,7 +21,6 @@ export const environment = {
         new URL('https://backend.demo.lens.samply.de/test/'),
         [
           'bonn',
-          'dresden',
           'essen',
           'frankfurt',
           'hannover',
@@ -35,7 +34,7 @@ export const environment = {
       new Beam(
         'broker.ccp-it.dktk.dkfz.de',
         new URL('https://backend.demo.lens.samply.de/prod/'),
-        ['mannheim', 'freiburg', 'muenchen-tum', 'hamburg', 'berlin']
+        ['mannheim', 'freiburg', 'muenchen-tum', 'hamburg', 'berlin', 'dresden']
       ),
     ],
     [
