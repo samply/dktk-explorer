@@ -53,7 +53,7 @@ services:
       BEAM_URL: http://beam-proxy:8081
       BEAM_PROXY_ID: ${LOCAL_BEAM_ID}
       BEAM_BROKER_ID: ${BROKER_HOST}
-      BEAM_APP_ID: ${SITES_APP_ID}
+      BEAM_APP_ID: "focus"
     depends_on:
       - "beam-proxy"
     labels:
@@ -73,8 +73,7 @@ services:
     environment:
       BROKER_URL: https://${BROKER_HOST}
       PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST}
-      APP_0_ID: ${SITES_APP_ID}
-      APP_0_KEY: ${LOCAL_BEAM_SECRET}
+      APP_focus_KEY: ${LOCAL_BEAM_SECRET}
       PRIVKEY_FILE: /run/secrets/proxy.pem
       ALL_PROXY: ${http_proxy}
     secrets:
@@ -89,7 +88,7 @@ services:
       BEAM_URL: http://beam-proxy-test:8081
       BEAM_PROXY_ID: ${LOCAL_BEAM_ID}
       BEAM_BROKER_ID: ${BROKER_HOST_TEST}
-      BEAM_APP_ID: ${SITES_APP_ID}
+      BEAM_APP_ID: "focus"
     depends_on:
       - "beam-proxy"
     labels:
@@ -107,8 +106,7 @@ services:
     environment:
       BROKER_URL: https://${BROKER_HOST_TEST}
       PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST_TEST}
-      APP_0_ID: ${SITES_APP_ID}
-      APP_0_KEY: ${LOCAL_BEAM_SECRET_TEST}
+      APP_focus_KEY: ${LOCAL_BEAM_SECRET_TEST}
       PRIVKEY_FILE: /run/secrets/proxy.pem
       ROOTCERT_FILE: /run/secrets/root-test.crt.pem
       ALL_PROXY: ${http_proxy}
