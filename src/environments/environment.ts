@@ -25,7 +25,6 @@ export const environment = {
           'frankfurt',
           'hannover',
           'mainz',
-          'muenchen-lmu',
           'ulm',
           'wuerzburg',
         ]
@@ -34,7 +33,7 @@ export const environment = {
       new Beam(
         'broker.ccp-it.dktk.dkfz.de',
         new URL('https://backend.demo.lens.samply.de/prod/'),
-        ['mannheim', 'freiburg', 'muenchen-tum', 'hamburg', 'berlin', 'dresden']
+        ['mannheim', 'freiburg', 'muenchen-tum', 'hamburg', 'berlin', 'dresden', 'muenchen-lmu']
       ),
     ],
     [
