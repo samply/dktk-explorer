@@ -57,9 +57,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'DKTK/CCP Navigator'`, () => {
+  it(`should have as title 'DKTK/CCP Explorer'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title.getTitle()).toEqual('DKTK/CCP Navigator');
+    expect(app.title.getTitle()).toEqual('DKTK/CCP Explorer');
   });
 });

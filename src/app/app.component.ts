@@ -13,7 +13,7 @@ import {
 })
 export class AppComponent {
   constructor(public title: Title) {
-    title.setTitle('DKTK/CCP Navigator');
+    title.setTitle('DKTK/CCP Explorer');
   }
 
   public primaryButtonColors: primaryButtonColors = {
