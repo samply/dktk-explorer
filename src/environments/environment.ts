@@ -19,7 +19,7 @@ export const environment = {
       new Beam(
         'dev.broker.ccp-it.dktk.dkfz.de',
         new URL('https://backend.demo.lens.samply.de/test/'),
-        ['bonn', 'essen', 'frankfurt', 'hannover', 'mainz', 'ulm', 'wuerzburg']
+        ['bonn', 'essen', 'frankfurt', 'hannover', 'ulm', 'wuerzburg']
       ),
       // NOTE: This is a temporary workaround while switching the sites to the production system
       new Beam(
@@ -32,6 +32,7 @@ export const environment = {
           'hamburg',
           'berlin',
           'dresden',
+          'mainz',
           'muenchen-lmu',
         ]
       ),
