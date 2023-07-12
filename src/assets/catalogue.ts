@@ -6,7 +6,6 @@ import { Lokalisation } from './lokalisation';
 import { MolecularMarker } from './molecular-marker';
 
 export const staticCatalogue: Array<Category> = [
-  new Category('tumor_entity', 'Tumorentität', Entities),
   new Category('patient', 'Patient', [
     new Criteria(
       'gender',
@@ -37,6 +36,7 @@ export const staticCatalogue: Array<Category> = [
         },
       ]
     ),
+    new Category('tumor_entity', 'Tumorentität', Entities),
     new Criteria(
       '75186-7',
       { de: 'Vitalstatus', en: 'Vital status' },
