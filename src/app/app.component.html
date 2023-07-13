@@ -1,14 +1,22 @@
 <header class="row line">
   <p-image [src]="'assets/dktk.svg'" alt="DKTK"></p-image>
-  <span class="ccp-header">Clinical Communication Platform (CCP)</span>
+  <div>
+    <span class="ccp-header">CCP Explorer</span>
+  </div>
+  <p-image [src]="'assets/logo-dkfz.svg'" alt="DKFZ"></p-image>
 </header>
 <router-outlet></router-outlet>
 <footer class="row line">
-  <div></div>
-  <div></div>
-  <div>
-    Made with ♥ and <a href="https://git.verbis.dkfz.de/torbens-prototypen/lens">samply/lens-core</a>.
-  </div>
-  <p-image [src]="'assets/logo-dkfz.svg'" alt="DKFZ"></p-image>
-  <div></div>
+    <span>
+      Nutzungsvereinbarung
+    </span>
+    <span>
+      <a href="mailto:ccp@dkfz.de">ccp@dkfz.de</a>
+    </span>
+    <span>
+      © 2023&nbsp;
+      <a href="https://dktk.dkfz.de/klinische-plattformen/ueber-die-ccp/about-ccp">
+        Clinical Communication Platform (CCP)
+      </a>
+    </span>
 </footer>

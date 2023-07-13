@@ -19,24 +19,22 @@ export const environment = {
       new Beam(
         'dev.broker.ccp-it.dktk.dkfz.de',
         new URL('https://backend.demo.lens.samply.de/test/'),
-        [
-          'berlin',
-          'bonn',
-          'dresden',
-          'essen',
-          'frankfurt',
-          'hannover',
-          'mainz',
-          'muenchen-lmu',
-          'ulm',
-          'wuerzburg',
-        ]
+        ['bonn', 'essen', 'frankfurt', 'hannover', 'ulm', 'wuerzburg']
       ),
       // NOTE: This is a temporary workaround while switching the sites to the production system
       new Beam(
         'broker.ccp-it.dktk.dkfz.de',
         new URL('https://backend.demo.lens.samply.de/prod/'),
-        ['mannheim', 'freiburg', 'muenchen-tum', 'hamburg']
+        [
+          'mannheim',
+          'freiburg',
+          'muenchen-tum',
+          'hamburg',
+          'berlin',
+          'dresden',
+          'mainz',
+          'muenchen-lmu',
+        ]
       ),
     ],
     [

@@ -32,7 +32,21 @@
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.line > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.line > *:first-child {
+  justify-content: start;
+}
+
+.line > *:last-child {
+  justify-content: end;
 }
 
 .main {
