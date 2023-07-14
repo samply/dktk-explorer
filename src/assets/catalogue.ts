@@ -36,7 +36,6 @@ export const staticCatalogue: Array<Category> = [
         },
       ]
     ),
-    new Category('tumor_entity', 'Tumorentität', Entities),
     new Criteria(
       '75186-7',
       { de: 'Vitalstatus', en: 'Vital status' },
@@ -62,6 +61,7 @@ export const staticCatalogue: Array<Category> = [
       ]
     ),
   ]),
+  new Category('tumor_entity', 'Tumorentität', Entities),
   new Category('tumor_classification', 'Klassifikation von Tumoren', [
     new Criteria(
       'year_of_diagnosis',
