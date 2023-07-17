@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3] - 2023-07-17
+### :bug: Bug Fixes
+- [`25341ca`](https://github.com/samply/dktk-explorer/commit/25341ca95bea85190243524c0da62398a653e9db) - move tumor entity out of patient category *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.2] - 2023-07-13
 ### :bug: Bug Fixes
 - [`f7804c6`](https://github.com/samply/dktk-explorer/commit/f7804c6687c9bfeda7f9d81fa3fe85fa51b4bc05) - styling *(commit by [@patrickskowronekdkfz](https://github.com/patrickskowronekdkfz))*
@@ -61,3 +66,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.0]: https://github.com/samply/dktk-explorer/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/samply/dktk-explorer/compare/0.2.0...0.2.1
 [0.2.2]: https://github.com/samply/dktk-explorer/compare/0.2.1...0.2.2
+[0.2.3]: https://github.com/samply/dktk-explorer/compare/0.2.2...0.2.3
