@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.4] - 2023-07-18
+### :bug: Bug Fixes
+- [`d1e05a5`](https://github.com/samply/dktk-explorer/commit/d1e05a5aa8e9068448320c555df4fec247aee033) - add frankfurt also to production *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+### :wrench: Chores
+- [`fc4b33a`](https://github.com/samply/dktk-explorer/commit/fc4b33a6303e53ca437b7e44367263b1404183ac) - switched fra from dev to prod *(commit by [@patrickskowronekdkfz](https://github.com/patrickskowronekdkfz))*
+
+
 ## [0.2.3] - 2023-07-17
 ### :bug: Bug Fixes
 - [`25341ca`](https://github.com/samply/dktk-explorer/commit/25341ca95bea85190243524c0da62398a653e9db) - move tumor entity out of patient category *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -67,3 +75,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.1]: https://github.com/samply/dktk-explorer/compare/0.2.0...0.2.1
 [0.2.2]: https://github.com/samply/dktk-explorer/compare/0.2.1...0.2.2
 [0.2.3]: https://github.com/samply/dktk-explorer/compare/0.2.2...0.2.3
+[0.2.4]: https://github.com/samply/dktk-explorer/compare/0.2.3...0.2.4
