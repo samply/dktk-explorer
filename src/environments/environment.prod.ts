@@ -20,6 +20,7 @@ export const environment = {
           'freiburg',
           'muenchen-tum',
           'hamburg',
+          'frankfurt',
           'berlin',
           'mainz',
           'dresden',
