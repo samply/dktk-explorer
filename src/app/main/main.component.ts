@@ -61,7 +61,7 @@ export class MainComponent {
   private genderHeaders: Map<string, string> = new Map<string, string>()
     .set('male', 'männlich')
     .set('female', 'weiblich')
-    .set('other', 'sonstiges / intersexuell')
+    .set('other', 'divers, intersexuell')
     .set('unknown', 'unbekannt');
 
   private vitalStateHeaders: Map<string, string> = new Map<string, string>()

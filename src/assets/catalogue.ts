@@ -26,7 +26,7 @@ export const staticCatalogue: Array<Category> = [
         },
         {
           key: 'other',
-          de: 'divers, sonstiges / intersexuell',
+          de: 'divers, intersexuell',
           en: 'diverse',
         },
         {
