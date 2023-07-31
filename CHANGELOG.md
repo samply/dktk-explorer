@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.5] - 2023-07-31
+### :recycle: Refactors
+- [`38a8aa3`](https://github.com/samply/dktk-explorer/commit/38a8aa32cff110d420be3b456e39477352a4129b) - adjusted naming for diverse gender *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+### :wrench: Chores
+- [`173ae7a`](https://github.com/samply/dktk-explorer/commit/173ae7a5b7f6f286751af8e131045f9e361cfbeb) - added muenchen-lmu to prod system *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.4] - 2023-07-18
 ### :bug: Bug Fixes
 - [`d1e05a5`](https://github.com/samply/dktk-explorer/commit/d1e05a5aa8e9068448320c555df4fec247aee033) - add frankfurt also to production *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -76,3 +84,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.2]: https://github.com/samply/dktk-explorer/compare/0.2.1...0.2.2
 [0.2.3]: https://github.com/samply/dktk-explorer/compare/0.2.2...0.2.3
 [0.2.4]: https://github.com/samply/dktk-explorer/compare/0.2.3...0.2.4
+[0.2.5]: https://github.com/samply/dktk-explorer/compare/0.2.4...0.2.5
