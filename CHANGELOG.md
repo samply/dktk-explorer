@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.6] - 2023-08-03
+### :wrench: Chores
+- [`5f7bc10`](https://github.com/samply/dktk-explorer/commit/5f7bc10dee3ec2e0d207a47660fac93a3e3c9bb7) - added Essen to prod broker *(commit by [@patrickskowronekdkfz](https://github.com/patrickskowronekdkfz))*
+- [`d43cf53`](https://github.com/samply/dktk-explorer/commit/d43cf53a13f10b3bf50cc5312453cba27449ce4a) - added Essen to prod lens *(commit by [@patrickskowronekdkfz](https://github.com/patrickskowronekdkfz))*
+
+
 ## [0.2.5] - 2023-07-31
 ### :recycle: Refactors
 - [`38a8aa3`](https://github.com/samply/dktk-explorer/commit/38a8aa32cff110d420be3b456e39477352a4129b) - adjusted naming for diverse gender *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -85,3 +91,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.3]: https://github.com/samply/dktk-explorer/compare/0.2.2...0.2.3
 [0.2.4]: https://github.com/samply/dktk-explorer/compare/0.2.3...0.2.4
 [0.2.5]: https://github.com/samply/dktk-explorer/compare/0.2.4...0.2.5
+[0.2.6]: https://github.com/samply/dktk-explorer/compare/0.2.5...0.2.6
