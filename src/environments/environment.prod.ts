@@ -26,6 +26,8 @@ export const environment = {
           'mainz',
           'muenchen-lmu',
           'essen',
+          'ulm',
+          'wuerzburg',
         ]
       ),
     ],
