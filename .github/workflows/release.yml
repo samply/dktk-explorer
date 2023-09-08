@@ -52,6 +52,7 @@ jobs:
       - name: Sync Develop
         run: |
           git checkout main;
-          git checkout --track origin/develop;
+          git fetch origin develop:develop
+          git checkout develop;
           git merge --ff-only main;
           git push;
