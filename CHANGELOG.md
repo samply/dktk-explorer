@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.8] - 2023-09-08
+### :wrench: Chores
+- [`d464c07`](https://github.com/samply/dktk-explorer/commit/d464c07f1f69cc022193c8b5ec7fdeed23aff5f3) - update dependencies *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.6] - 2023-08-03
 ### :wrench: Chores
 - [`5f7bc10`](https://github.com/samply/dktk-explorer/commit/5f7bc10dee3ec2e0d207a47660fac93a3e3c9bb7) - added Essen to prod broker *(commit by [@patrickskowronekdkfz](https://github.com/patrickskowronekdkfz))*
@@ -92,3 +97,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.4]: https://github.com/samply/dktk-explorer/compare/0.2.3...0.2.4
 [0.2.5]: https://github.com/samply/dktk-explorer/compare/0.2.4...0.2.5
 [0.2.6]: https://github.com/samply/dktk-explorer/compare/0.2.5...0.2.6
+[0.2.8]: https://github.com/samply/dktk-explorer/compare/0.2.7...0.2.8
