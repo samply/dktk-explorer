@@ -8,7 +8,7 @@ import {
 import { ResultSummaryBarComponent } from '@samply/lens-components/result-summary-bar';
 import { ResultTableComponent } from '@samply/lens-components/result-table';
 
-const DIAGNOSIS_REGEX = /C|D0|D4|D37|D38|D39/gm;
+const DIAGNOSIS_REGEX = /C|D0|D4|D37|D38|D39/;
 
 @Component({
   selector: 'app-main',
