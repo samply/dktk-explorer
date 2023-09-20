@@ -789,11 +789,6 @@ export const staticCatalogue: Array<Category> = [
             de: 'Klassifikation erfolgte während oder nach initialer multimodaler Therapie',
             en: '',
           },
-          {
-            key: '9',
-            de: 'native Klassifikation',
-            en: '',
-          },
         ]
       ),
 
@@ -807,11 +802,6 @@ export const staticCatalogue: Array<Category> = [
           {
             key: 'r',
             de: 'Klassifikation erfolgte zur Beurteilung eines Rezidivs',
-            en: '',
-          },
-          {
-            key: '9',
-            de: 'native Klassifikation vor Eintreten eines Rezidivs',
             en: '',
           },
         ]
