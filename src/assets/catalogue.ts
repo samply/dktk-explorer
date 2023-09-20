@@ -215,6 +215,26 @@ export const staticCatalogue: Array<Category> = [
           en: '',
         },
         {
+          key: 'IC',
+          de: 'IC',
+          en: '',
+        },
+        {
+          key: 'IB2',
+          de: 'IB2',
+          en: '',
+        },
+        {
+          key: 'IB1',
+          de: 'IB1',
+          en: '',
+        },
+        {
+          key: 'IB',
+          de: 'IB',
+          en: '',
+        },
+        {
           key: 'IA2',
           de: 'IA2',
           en: '',
@@ -229,20 +249,9 @@ export const staticCatalogue: Array<Category> = [
           de: 'IA',
           en: '',
         },
-
         {
-          key: 'IB2',
-          de: 'IB2',
-          en: '',
-        },
-        {
-          key: 'IB1',
-          de: 'IB1',
-          en: '',
-        },
-        {
-          key: 'IB',
-          de: 'IB',
+          key: 'I',
+          de: 'I',
           en: '',
         },
         {
