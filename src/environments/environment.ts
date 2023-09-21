@@ -16,11 +16,6 @@ export const environment = {
   production: false,
   lensConfig: new LensConfig(
     [
-      new Beam(
-        'dev.broker.ccp-it.dktk.dkfz.de',
-        new URL('https://backend.demo.lens.samply.de/test/'),
-        ['bonn']
-      ),
       // NOTE: This is a temporary workaround while switching the sites to the production system
       new Beam(
         'broker.ccp-it.dktk.dkfz.de',
@@ -39,6 +34,7 @@ export const environment = {
           'essen',
           'ulm',
           'wuerzburg',
+          'dktk-test',
         ]
       ),
     ],
