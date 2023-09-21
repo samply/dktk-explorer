@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.9] - 2023-09-21
+### :bug: Bug Fixes
+- [`ef53182`](https://github.com/samply/dktk-explorer/commit/ef53182281d688742d9b137c44e2aa3dcf52f48f) - remove global flag from regex *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+### :recycle: Refactors
+- [`96a1077`](https://github.com/samply/dktk-explorer/commit/96a1077702c37c7472430741595a633fdb5edd40) - changed the UICC Searchtee and added 'I' and 'IC' *(commit by [@MarcelKisselDKFZ](https://github.com/MarcelKisselDKFZ))*
+- [`b97f65e`](https://github.com/samply/dktk-explorer/commit/b97f65e36a83764408ccd68b4254e7d1d1a8e531) - removed native classification under TNM-y and TNM-r *(commit by [@MarcelKisselDKFZ](https://github.com/MarcelKisselDKFZ))*
+
+### :wrench: Chores
+- [`dd44173`](https://github.com/samply/dktk-explorer/commit/dd44173aeb2cff579c27c58c08fc55c030b6026a) - moved Hannover to prod lens *(commit by [@TKussel](https://github.com/TKussel))*
+- [`7d2faf0`](https://github.com/samply/dktk-explorer/commit/7d2faf0a5cb8163f96919e32dd846536ceafe99e) - run prettier *(commit by [@TKussel](https://github.com/TKussel))*
+- [`8860815`](https://github.com/samply/dktk-explorer/commit/8860815f295afa399769d0248458c68817011cc9) - bump lens 0.1.4 -> 0.1.5 *(commit by [@torbrenner](https://github.com/torbrenner))*
+- [`5d6bbb5`](https://github.com/samply/dktk-explorer/commit/5d6bbb56845f8f5b0ab1fe4b269d8d7e26be484b) - remove deprecated broker *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.8] - 2023-09-08
 ### :wrench: Chores
 - [`d464c07`](https://github.com/samply/dktk-explorer/commit/d464c07f1f69cc022193c8b5ec7fdeed23aff5f3) - update dependencies *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -98,3 +113,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.5]: https://github.com/samply/dktk-explorer/compare/0.2.4...0.2.5
 [0.2.6]: https://github.com/samply/dktk-explorer/compare/0.2.5...0.2.6
 [0.2.8]: https://github.com/samply/dktk-explorer/compare/0.2.7...0.2.8
+[0.2.9]: https://github.com/samply/dktk-explorer/compare/0.2.8...0.2.9
