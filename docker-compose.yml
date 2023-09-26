@@ -47,13 +47,14 @@ services:
 
   spot:
     # NOTE: This will be replaced by https://github.com/samply/spot soon.
-    image: docker.verbis.dkfz.de/ccp-private/central-spot
+    image: samply/rustyspot
+    ports:
+      - 8080:8080
     environment:
+      RUST_LOG: "info"
       BEAM_SECRET: "${LOCAL_BEAM_SECRET}"
       BEAM_URL: http://beam-proxy:8081
-      BEAM_PROXY_ID: ${LOCAL_BEAM_ID}
-      BEAM_BROKER_ID: ${BROKER_HOST}
-      BEAM_APP_ID: "focus"
+      BEAM_APP: "${SITES_APP_ID}.${LOCAL_BEAM_ID}.${BROKER_HOST}"
     depends_on:
       - "beam-proxy"
     labels:
@@ -69,26 +70,26 @@ services:
       - "traefik.http.routers.spot.middlewares=corsheaders,traefik-forward-auth,stripprefix_spot_prod"
 
   beam-proxy:
-    image: docker.verbis.dkfz.de/cache/samply/beam-proxy:develop
+    image: samply/beam-proxy:develop
     environment:
-      BROKER_URL: https://${BROKER_HOST}
-      PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST}
-      APP_focus_KEY: ${LOCAL_BEAM_SECRET}
-      PRIVKEY_FILE: /run/secrets/proxy.pem
-      ALL_PROXY: ${http_proxy}
+      - RUST_LOG=info
+      - BROKER_URL=https://${BROKER_HOST}
+      - PROXY_ID=${LOCAL_BEAM_ID}.${BROKER_HOST}
+      - APP_${SITES_APP_ID}_KEY=${LOCAL_BEAM_SECRET}
+      - PRIVKEY_FILE=/run/secrets/proxy.pem
+      - ALL_PROXY: ${http_proxy}
     secrets:
       - proxy.pem
       - root.crt.pem
 
   spot-test:
     # NOTE: This will be replaced by https://github.com/samply/spot soon.
-    image: docker.verbis.dkfz.de/ccp-private/central-spot
+    image: samply/rustyspot
     environment:
+      RUST_LOG: "info"
       BEAM_SECRET: "${LOCAL_BEAM_SECRET_TEST}"
-      BEAM_URL: http://beam-proxy-test:8081
-      BEAM_PROXY_ID: ${LOCAL_BEAM_ID}
-      BEAM_BROKER_ID: ${BROKER_HOST_TEST}
-      BEAM_APP_ID: "focus"
+      BEAM_URL: http://beam-proxy:8081
+      BEAM_APP: "${SITES_APP_ID}.${LOCAL_BEAM_ID}.${BROKER_HOST_TEST}"
     depends_on:
       - "beam-proxy"
     labels:
@@ -104,12 +105,13 @@ services:
   beam-proxy-test:
     image: docker.verbis.dkfz.de/cache/samply/beam-proxy:develop
     environment:
-      BROKER_URL: https://${BROKER_HOST_TEST}
-      PROXY_ID: ${LOCAL_BEAM_ID}.${BROKER_HOST_TEST}
-      APP_focus_KEY: ${LOCAL_BEAM_SECRET_TEST}
-      PRIVKEY_FILE: /run/secrets/proxy.pem
-      ROOTCERT_FILE: /run/secrets/root-test.crt.pem
-      ALL_PROXY: ${http_proxy}
+      - RUST_LOG=info
+      - BROKER_URL=https://${BROKER_HOST_TEST}
+      - PROXY_ID=${LOCAL_BEAM_ID}.${BROKER_HOST_TEST}
+      - APP_${SITES_APP_ID}_KEY=${LOCAL_BEAM_SECRET_TEST}
+      - PRIVKEY_FILE=/run/secrets/proxy.pem
+      - ROOTCERT_FILE=/run/secrets/root-test.crt.pem
+      - ALL_PROXY: ${http_proxy}
     secrets:
       - proxy.pem
       - root-test.crt.pem
