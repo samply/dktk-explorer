@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.10] - 2023-10-12
+### :wrench: Chores
+- [`ee71a34`](https://github.com/samply/dktk-explorer/commit/ee71a34afa62d9a85af5820630c9f08f0e0c8ef0) - update lens from 0.1.5 -> 0.1.6 *(commit by [@torbrenner](https://github.com/torbrenner))*
+- [`97248d2`](https://github.com/samply/dktk-explorer/commit/97248d2b3c333e88b46fb01fff240fdea70c216a) - release version 0.2.10 *(commit by [@torbrenner](https://github.com/torbrenner))*
+
+
 ## [0.2.9] - 2023-09-21
 ### :bug: Bug Fixes
 - [`ef53182`](https://github.com/samply/dktk-explorer/commit/ef53182281d688742d9b137c44e2aa3dcf52f48f) - remove global flag from regex *(commit by [@torbrenner](https://github.com/torbrenner))*
@@ -114,3 +120,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.2.6]: https://github.com/samply/dktk-explorer/compare/0.2.5...0.2.6
 [0.2.8]: https://github.com/samply/dktk-explorer/compare/0.2.7...0.2.8
 [0.2.9]: https://github.com/samply/dktk-explorer/compare/0.2.8...0.2.9
+[0.2.10]: https://github.com/samply/dktk-explorer/compare/0.2.9...0.2.10
