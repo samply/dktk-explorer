@@ -1608,7 +1608,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '8240/3'),
           ],
           'urn:dktk:code:65:2',
@@ -3771,7 +3771,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -3792,7 +3792,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Condition('59847-4', 'EQUALS', '', '8850/1'),
           ],
           'urn:dktk:code:146:2',
@@ -3802,7 +3802,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -3826,7 +3826,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Operation(
               'OR',
               [
@@ -3852,7 +3852,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '9252/3'),
           ],
           'urn:dktk:code:149:2',
@@ -3862,7 +3862,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Operation(
               'OR',
               [
@@ -3882,7 +3882,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '8890/3'),
           ],
           'urn:dktk:code:153:2',
@@ -3892,7 +3892,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '8711/3'),
           ],
           'urn:dktk:code:154:2',
@@ -3902,7 +3902,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Operation(
               'OR',
               [
@@ -3921,7 +3921,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -3944,7 +3944,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -3964,7 +3964,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4015,7 +4015,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Operation(
               'OR',
               [
@@ -4035,7 +4035,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Condition('59847-4', 'EQUALS', '', '9560/1'),
           ],
           'urn:dktk:code:161:2',
@@ -4045,7 +4045,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4075,7 +4075,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'D%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'D.%'),
             new Operation(
               'OR',
               [
@@ -4105,7 +4105,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4363,7 +4363,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '9100/3'),
           ],
           'urn:dktk:code:177:2',
@@ -4373,7 +4373,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4396,7 +4396,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4415,7 +4415,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Condition('59847-4', 'EQUALS', '', '9071/3'),
           ],
           'urn:dktk:code:178:2',
@@ -4425,7 +4425,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
@@ -4448,7 +4448,7 @@ export const Entities: Category[] = [
         new Operation(
           'AND',
           [
-            new Condition('diagnosis', 'CONTAINS', '', 'C%'),
+            new Condition('diagnosis', 'CONTAINS', '', 'C.%'),
             new Operation(
               'OR',
               [
