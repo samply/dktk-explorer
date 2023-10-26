@@ -64,15 +64,15 @@ export const staticCatalogue: Array<Category> = [
   new Category('tumor_entity', 'Tumorentität', Entities),
   new Category('tumor_classification', 'Klassifikation von Tumoren', [
     new Criteria(
-      'year_of_diagnosis',
-      { de: 'Diagnosejahr', en: 'Year of Diagnosis' },
+      'year_of_primary_diagnosis',
+      { de: 'Diagnosejahr der Erstdiagnose', en: 'Year of Primary Diagnosis' },
       'number',
       '',
       ['LOWER_THAN', 'GREATER_THAN', 'BETWEEN']
     ),
     new Criteria(
-      'age_at_diagnosis',
-      { de: 'Alter bei Erstdiagnose', en: 'Age at Diagnosis' },
+      'age_at_primary_diagnosis',
+      { de: 'Alter bei Erstdiagnose', en: 'Age at Primary Diagnosis' },
       'number',
       '',
       ['LOWER_THAN', 'GREATER_THAN', 'BETWEEN']
