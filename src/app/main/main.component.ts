@@ -223,5 +223,11 @@ export class MainComponent {
       BarChartComponent,
       { xAxisTitle: 'Probentypen', yAxisTitle: 'Probenanzahl' }
     ),
+    new ResultRenderer(
+      'Gezählte Histologien',
+      [{ key: 'Histo', subset: 'Histlogoies' }],
+      BarChartComponent,
+      { xAxisTitle: 'Probentypen', yAxisTitle: 'Probenanzahl' }
+    ),
   ];
 }

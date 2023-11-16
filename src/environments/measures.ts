@@ -106,6 +106,52 @@ DKTK_STRAT_DIAGNOSIS_STRATIFIER
 `,
 };
 
+export const dktkHistologyMeasure = {
+  key: 'Histo',
+  measure: {
+    code: {
+      text: 'Histo',
+    },
+    extension: [
+      {
+        url: 'http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis',
+        valueCode: 'Observation',
+      },
+    ],
+    population: [
+      {
+        code: {
+          coding: [
+            {
+              system:
+                'http://terminology.hl7.org/CodeSystem/measure-population',
+              code: 'initial-population',
+            },
+          ],
+        },
+        criteria: {
+          language: 'text/cql-identifier',
+          expression: 'Histo',
+        },
+      },
+    ],
+    stratifier: [
+      {
+        code: {
+          text: 'Histlogoies',
+        },
+        criteria: {
+          language: 'text/cql-identifier',
+          expression: 'Histlogoies',
+        },
+      },
+    ],
+  },
+  cql: `
+  DKTK_STRAT_HISTOLOGY_STRATIFIER
+`,
+};
+
 export const dktkSpecimenMeasure = {
   key: 'specimen',
   measure: {
