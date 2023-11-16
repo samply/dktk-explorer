@@ -10,7 +10,7 @@ import {
   dktkPatientsMeasure,
   dktkProceduresMeasure,
   dktkSpecimenMeasure,
-  dktkHistologyMeasure
+  dktkHistologyMeasure,
 } from './measures';
 
 export const environment = {
