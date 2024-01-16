@@ -38,6 +38,7 @@ services:
       # For some reason, login.verbis.dkfz.de does not have a "groups" scope but this comes automatically through a
       # scope called microprofile-jwt. Remove the following line once we have a "groups" scope.
       - OAUTH2_PROXY_SCOPE=openid profile email
+      - OAUTH2_PROXY_SET_AUTHORIZATION_HEADER=true
     labels:
       - "traefik.enable=true"
       - "traefik.http.middlewares.traefik-forward-auth.forwardauth.address=http://traefik-forward-auth:4180"
